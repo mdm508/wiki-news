@@ -9,23 +9,33 @@
 /* Begin PBXBuildFile section */
 		0C002B0A239EC83300846B2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C002B09239EC83300846B2E /* AppDelegate.swift */; };
 		0C002B0C239EC83300846B2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C002B0B239EC83300846B2E /* SceneDelegate.swift */; };
-		0C002B0E239EC83300846B2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C002B0D239EC83300846B2E /* ViewController.swift */; };
 		0C002B11239EC83300846B2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C002B0F239EC83300846B2E /* Main.storyboard */; };
 		0C002B14239EC83300846B2E /* Slow_News.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C002B12239EC83300846B2E /* Slow_News.xcdatamodeld */; };
 		0C002B16239EC83B00846B2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C002B15239EC83B00846B2E /* Assets.xcassets */; };
 		0C002B19239EC83B00846B2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C002B17239EC83B00846B2E /* LaunchScreen.storyboard */; };
+		0C002B21239EDB2100846B2E /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C002B20239EDB2100846B2E /* FeedTableViewController.swift */; };
+		0C002B23239EDB3100846B2E /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C002B22239EDB3100846B2E /* HistoryTableViewController.swift */; };
+		0C002B25239EDB9100846B2E /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C002B24239EDB9100846B2E /* ArticleViewController.swift */; };
+		0CDAC4B123A195D60024DA0F /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDAC4B023A195D60024DA0F /* Article.swift */; };
+		0CDAC4B323A199D50024DA0F /* ArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDAC4B223A199D50024DA0F /* ArticleController.swift */; };
+		0CDAC4B523A19B620024DA0F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDAC4B423A19B620024DA0F /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C002B06239EC83300846B2E /* Slow News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slow News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C002B09239EC83300846B2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C002B0B239EC83300846B2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0C002B0D239EC83300846B2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C002B10239EC83300846B2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C002B13239EC83300846B2E /* Slow_News.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Slow_News.xcdatamodel; sourceTree = "<group>"; };
 		0C002B15239EC83B00846B2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C002B18239EC83B00846B2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C002B1A239EC83B00846B2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C002B20239EDB2100846B2E /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		0C002B22239EDB3100846B2E /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		0C002B24239EDB9100846B2E /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		0CDAC4B023A195D60024DA0F /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		0CDAC4B223A199D50024DA0F /* ArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleController.swift; sourceTree = "<group>"; };
+		0CDAC4B423A19B620024DA0F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +70,13 @@
 			children = (
 				0C002B09239EC83300846B2E /* AppDelegate.swift */,
 				0C002B0B239EC83300846B2E /* SceneDelegate.swift */,
-				0C002B0D239EC83300846B2E /* ViewController.swift */,
 				0C002B0F239EC83300846B2E /* Main.storyboard */,
+				0CDAC4B023A195D60024DA0F /* Article.swift */,
+				0CDAC4B223A199D50024DA0F /* ArticleController.swift */,
+				0CDAC4B423A19B620024DA0F /* Extensions.swift */,
+				0C002B24239EDB9100846B2E /* ArticleViewController.swift */,
+				0C002B20239EDB2100846B2E /* FeedTableViewController.swift */,
+				0C002B22239EDB3100846B2E /* HistoryTableViewController.swift */,
 				0C002B15239EC83B00846B2E /* Assets.xcassets */,
 				0C002B17239EC83B00846B2E /* LaunchScreen.storyboard */,
 				0C002B1A239EC83B00846B2E /* Info.plist */,
@@ -141,10 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C002B0E239EC83300846B2E /* ViewController.swift in Sources */,
+				0CDAC4B123A195D60024DA0F /* Article.swift in Sources */,
+				0CDAC4B523A19B620024DA0F /* Extensions.swift in Sources */,
 				0C002B0A239EC83300846B2E /* AppDelegate.swift in Sources */,
+				0CDAC4B323A199D50024DA0F /* ArticleController.swift in Sources */,
+				0C002B25239EDB9100846B2E /* ArticleViewController.swift in Sources */,
 				0C002B0C239EC83300846B2E /* SceneDelegate.swift in Sources */,
 				0C002B14239EC83300846B2E /* Slow_News.xcdatamodeld in Sources */,
+				0C002B21239EDB2100846B2E /* FeedTableViewController.swift in Sources */,
+				0C002B23239EDB3100846B2E /* HistoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
