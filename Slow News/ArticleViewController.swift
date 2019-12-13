@@ -11,10 +11,18 @@ import UIKit
 class ArticleViewController: UIViewController {
     var article: Article!
     
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var authorLabel: UILabel!
+    @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var contentTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        titleLabel.text = article.title
+        authorLabel.text = article.author
+        dateLabel.text = article.date
+        contentTextView.text = article.content
+        
+        
     }
     
 
