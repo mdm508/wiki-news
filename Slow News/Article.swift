@@ -14,7 +14,7 @@ struct NewsArticles: Codable {
     var articles: [Article]
 }
 
-struct Article: Codable {
+struct Article: Codable, Hashable {
     var title: String?
     var author: String?
     var description: String?

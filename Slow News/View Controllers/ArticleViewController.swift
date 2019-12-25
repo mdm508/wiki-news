@@ -10,7 +10,6 @@ import UIKit
 
 class ArticleViewController: UIViewController {
     var article: Article!
-    
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var authorLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
@@ -21,12 +20,8 @@ class ArticleViewController: UIViewController {
         authorLabel.text = article.author
         dateLabel.text = article.date
         contentTextView.text = article.content
-        
-        
     }
-    
-
-
-
-
+    @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
+        ArticleController.shared.addToSavedArticles(articleToAdd: self.article)
+    }
 }

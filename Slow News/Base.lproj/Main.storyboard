@@ -111,7 +111,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OcP-oh-JEl"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3z5-Xh-IKn"/>
+                    <navigationItem key="navigationItem" id="3z5-Xh-IKn">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="OTh-pr-zhD">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="69r-eR-Pky" id="HzQ-t5-5zU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="authorLabel" destination="0Ke-m2-0KO" id="E0l-Wf-j8F"/>
                         <outlet property="contentTextView" destination="QYt-VU-2af" id="Ir1-h9-as7"/>

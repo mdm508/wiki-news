@@ -9,9 +9,14 @@
 
 import Foundation
 
-class ArticleController{
+class ArticleController {
+    static let shared = ArticleController()
+    var savedArticles: Set<Article> = [] {
+        didSet {
+            NotificationCenter.default.post(name: ArticleController.articleSavedNotification, object: self)
+        }
+    }
     let baseURL = URL(string: "https://newsapi.org/v2/top-headlines")!
-    
     func fetchNews(completionHandler: @escaping (NewsArticles?) -> Void){
         let query: [String: String] = [
             "apiKey" : "c367ef4ded094b38b2a7a5f1de0e2579",
@@ -32,7 +37,13 @@ class ArticleController{
         }
         task.resume()
     }
+    func addToSavedArticles(articleToAdd articleToSave: Article){
+        self.savedArticles.insert(articleToSave)
+    }
 }
 
+extension ArticleController {
+    static let articleSavedNotification = Notification.Name("articleSaved")
+}
 
 
