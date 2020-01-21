@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,9 +16,11 @@
 		0C002B21239EDB2100846B2E /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C002B20239EDB2100846B2E /* FeedTableViewController.swift */; };
 		0C002B25239EDB9100846B2E /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C002B24239EDB9100846B2E /* ArticleViewController.swift */; };
 		0C656EDF23B06639000BE996 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C656EDE23B06639000BE996 /* HistoryTableViewController.swift */; };
+		0CB5B66623D683F100035843 /* key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5B66523D683F100035843 /* key.swift */; };
 		0CDAC4B123A195D60024DA0F /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDAC4B023A195D60024DA0F /* Article.swift */; };
 		0CDAC4B323A199D50024DA0F /* ArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDAC4B223A199D50024DA0F /* ArticleController.swift */; };
 		0CDAC4B523A19B620024DA0F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDAC4B423A19B620024DA0F /* Utilities.swift */; };
+		86FB9E3BB1CEC28D447E246F /* Pods_Slow_News.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B43595718AF57107B5F5CD /* Pods_Slow_News.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +35,13 @@
 		0C002B20239EDB2100846B2E /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		0C002B24239EDB9100846B2E /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		0C656EDE23B06639000BE996 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		0CB5B66523D683F100035843 /* key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = key.swift; sourceTree = "<group>"; };
 		0CDAC4B023A195D60024DA0F /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		0CDAC4B223A199D50024DA0F /* ArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleController.swift; sourceTree = "<group>"; };
 		0CDAC4B423A19B620024DA0F /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		3C1A3F4D9E0496CA1E59143E /* Pods-Slow News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slow News.debug.xcconfig"; path = "Target Support Files/Pods-Slow News/Pods-Slow News.debug.xcconfig"; sourceTree = "<group>"; };
+		44B43595718AF57107B5F5CD /* Pods_Slow_News.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Slow_News.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B029D4D8AC214827AE0CA145 /* Pods-Slow News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slow News.release.xcconfig"; path = "Target Support Files/Pods-Slow News/Pods-Slow News.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86FB9E3BB1CEC28D447E246F /* Pods_Slow_News.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +61,8 @@
 			children = (
 				0C002B08239EC83300846B2E /* Slow News */,
 				0C002B07239EC83300846B2E /* Products */,
+				97D973A0EFA7A4C9B8380CE3 /* Pods */,
+				946D69678D1E0F8FFD6FA8AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +82,7 @@
 				0C002B0F239EC83300846B2E /* Main.storyboard */,
 				0CDAC4B023A195D60024DA0F /* Article.swift */,
 				0CDAC4B223A199D50024DA0F /* ArticleController.swift */,
+				0CB5B66523D683F100035843 /* key.swift */,
 				0CDAC4B423A19B620024DA0F /* Utilities.swift */,
 				0C656EDD23B0635B000BE996 /* View Controllers */,
 				0C002B15239EC83B00846B2E /* Assets.xcassets */,
@@ -93,6 +103,23 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		946D69678D1E0F8FFD6FA8AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44B43595718AF57107B5F5CD /* Pods_Slow_News.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97D973A0EFA7A4C9B8380CE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C1A3F4D9E0496CA1E59143E /* Pods-Slow News.debug.xcconfig */,
+				B029D4D8AC214827AE0CA145 /* Pods-Slow News.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C002B1D239EC83B00846B2E /* Build configuration list for PBXNativeTarget "Slow News" */;
 			buildPhases = (
+				EEEBB26E1E9A3C4088598193 /* [CP] Check Pods Manifest.lock */,
 				0C002B02239EC83300846B2E /* Sources */,
 				0C002B03239EC83300846B2E /* Frameworks */,
 				0C002B04239EC83300846B2E /* Resources */,
+				EDA2352147CBA80FF929BD19 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,6 +188,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EDA2352147CBA80FF929BD19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Slow News/Pods-Slow News-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Slow News/Pods-Slow News-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Slow News/Pods-Slow News-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEEBB26E1E9A3C4088598193 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Slow News-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0C002B02239EC83300846B2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -173,6 +244,7 @@
 				0C002B0C239EC83300846B2E /* SceneDelegate.swift in Sources */,
 				0C002B14239EC83300846B2E /* Slow_News.xcdatamodeld in Sources */,
 				0C002B21239EDB2100846B2E /* FeedTableViewController.swift in Sources */,
+				0CB5B66623D683F100035843 /* key.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +386,7 @@
 		};
 		0C002B1E239EC83B00846B2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C1A3F4D9E0496CA1E59143E /* Pods-Slow News.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -332,6 +405,7 @@
 		};
 		0C002B1F239EC83B00846B2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B029D4D8AC214827AE0CA145 /* Pods-Slow News.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

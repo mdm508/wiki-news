@@ -1,0 +1,6 @@
+framework module Pods_Slow_News {
+  umbrella header "Pods-Slow News-umbrella.h"
+
+  export *
+  module * { export * }
+}
